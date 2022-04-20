@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFUploadFile.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="20, 0, 20, 20" CornerRadius="0">
+            <Label Text="Video KYC Demo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        
+        
+        <Button Text="Existing Image to Text" Clicked="Button_Clicked" Margin="0,10,0,0"/>
+        <Button Text="Instant Image to Text" Clicked="Button_Clicked_1" />
+        <!--<Button Text="Capture and Upload Video" Clicked="Button_Clicked_3" />-->
+        <Button Text="Voice to Text" Clicked="Button_Clicked_4" />
+        <Button Text="Video Identification" Clicked="Button_Clicked_2" />
+        <Button Text="Help" Clicked="Button_Clicked_6"/>
+        <Label x:Name="StatusLabel" Text="Upload status" FontSize="Title" Padding="30,30,30,30"/>
+        
+    </StackLayout>
+
+</ContentPage>

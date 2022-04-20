@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFUploadFile.Views.CustomerDetailsPage"
+    Padding="10">
+
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:CustomerDetailsVM x:Key="vm"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+
+    <ScrollView>
+        <StackLayout>
+
+            <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0">
+                <Label Text="Customer Details" HorizontalTextAlignment="Center" TextColor="Black" FontSize="30"/>
+            </Frame>
+
+            <Label Text="Customer ID" FontSize="22" TextColor="Black"/>
+            <Entry  Text="956354217" Margin="0,-5,0,10" Keyboard="Numeric"/>
+
+            <Label Text="Lead ID" FontSize="22" TextColor="Black"/>
+            <Entry Text="450015512" Margin="0,-5,0,10" Keyboard="Numeric"/>
+
+            <Label Text="Residential Status for tax purposes" FontSize="22" TextColor="Black"/>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton Content="Indian" IsChecked="true"/>
+                <RadioButton Content="NRI" />
+            </StackLayout>
+            
+
+            <Label Text="Nationality" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+            <StackLayout>
+                <RadioButton Content="Indian" IsChecked="true"/>
+                <RadioButton Content="NRI" />
+                <RadioButton Content="PIO/OCI"/>
+                <RadioButton Content="Foreign National" />
+            </StackLayout>
+
+            <Label Text="Policy For" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton Content="Self" IsChecked="true"/>
+                <RadioButton Content="Dependent" />
+            </StackLayout>
+
+            <Label Text="Objective of Insurance" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+            <StackLayout>
+                <RadioButton Content="Individual Policy" IsChecked="true"/>
+                <RadioButton Content="MWPA" />
+                <RadioButton Content="HUF"/>
+                <RadioButton Content="CIP" />
+            </StackLayout>
+
+            <Label Text="PAN Number" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+            <Entry Text="BUXPP5432A" Margin="0,-5,0,10"/>
+
+            <StackLayout Orientation="Horizontal">
+            <CheckBox />
+            <Label Text="Don't have PAN?" FontSize="22" TextColor="Black"/>
+            </StackLayout>
+
+            <Label Text="Please enter proposer's contact details" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+
+            <Label Text="Mobile Number" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+            <Entry Keyboard="Numeric" Margin="0,-5,0,10"/>
+
+            <Label Text="Email Address" FontSize="22" TextColor="Black"/>
+            <Entry Keyboard="Email" Margin="0,-5,0,10"/>
+
+            <Button Text="Proceed"
+                    BackgroundColor="Orange"
+                    Clicked="NavigateButton_OnClicked"
+                    FontSize="22"
+                    TextColor="Black"/>
+
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

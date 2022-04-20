@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFUploadFile.Views.PersonalDetailsPage"
+    Padding="10">
+
+    <ScrollView>
+        <StackLayout>
+
+            <!--<Label Text="Proposer Personal Details" FontSize="30" HorizontalTextAlignment="Center"/>-->
+
+            <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0">
+                <Label Text="Proposer Personal Details" HorizontalTextAlignment="Center" TextColor="Black" FontSize="30"/>
+            </Frame>
+
+            <Label Text="Father's Name" FontSize="22" TextColor="Black"/>
+            <Entry  Text="ABCD" Margin="0,-5,0,10"/>
+
+            <Label Text="Mother's Name" FontSize="22" TextColor="Black"/>
+            <Entry  Text="EFGH" Margin="0,-5,0,10"/>
+
+            <Label Text="Marital Status" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="marital_status_picker"
+                    Title="Marital Status"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Single</x:String>
+                  <x:String>Married</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Education" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="education_picker"
+                    Title="Education"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Graduate</x:String>
+                  <x:String>Other</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Annual Income" FontSize="22" TextColor="Black"/>
+            <Entry  Text="1500000" Margin="0,-5,0,10"/>
+
+            <Label Text="Industry" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="industry_picker"
+                    Title="Industry"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Diving</x:String>
+                  <x:String>Finance</x:String>
+                  <x:String>Other</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Organisation Category" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="organisation_category_picker"
+                    Title="Organisation Category"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Pvt Ltd.</x:String>
+                  <x:String>Other</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Button Text="Proceed"
+                    BackgroundColor="Orange"
+                    Clicked="NavigateButton_OnClicked"
+                    FontSize="22"
+                    TextColor="Black"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

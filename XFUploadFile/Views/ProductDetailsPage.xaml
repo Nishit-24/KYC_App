@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFUploadFile.Views.ProductDetailsPage"
+    Padding="10">
+
+    <ScrollView>
+        <StackLayout>
+
+            <!--<Label Text="Personal Details" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"/>-->
+
+            <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0">
+                <Label Text="Personal Details" HorizontalTextAlignment="Center" TextColor="Black" FontSize="30"/>
+            </Frame>
+
+            <Label Text="First Name" FontSize="22" TextColor="Black"/>
+            <Entry  Text="kartik" Margin="0,-5,0,10"/>
+
+            <Label Text="Last Name" FontSize="22" TextColor="Black"/>
+            <Entry  Text="patil" Margin="0,-5,0,10"/>
+
+            <Label Text="Date of Birth" FontSize="22" TextColor="Black"/>
+            <DatePicker MinimumDate="01/01/2018"
+            MaximumDate="12/31/2018"
+            Date="06/21/2018"
+            Margin="0,-5,0,10"/>
+
+            <Label Text="Gender" FontSize="22" TextColor="Black"/>
+            <StackLayout>
+                <RadioButton Content="Male" IsChecked="true"/>
+                <RadioButton Content="Female" />
+                <RadioButton Content="Transgender"/>
+            </StackLayout>
+
+            <Label Text="Hoise No./ Apt. Name/ Society" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+            <Entry  Text="ABCD EFGH" Margin="0,-5,0,10"/>
+            
+            <Label Text="Raod/Area/Sector" FontSize="22" TextColor="Black"/>
+            <Entry Text="HIJK" Margin="0,-5,0,10"/>
+
+            <Label Text="District" FontSize="22" TextColor="Black"/>
+            <Entry  Text="LMNO" Margin="0,-5,0,10"/>
+
+            <Label Text="State" FontSize="22" TextColor="Black"/>
+            <Entry  Text="PQRS" Margin="0,-5,0,10"/>
+
+            <Label Text="Need of the Insurance" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="insurance_need_picker"
+                    Title="Need of the Insurance"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Protection</x:String>
+                  <x:String>Finance</x:String>
+                  <x:String>Other</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Life Stage" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="life_stage_picker"
+                    Title="Life Stage"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Single</x:String>
+                  <x:String>Married</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Recommended Product" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="recommeded_product_picker"
+                    Title="Recommended Product"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Max Life Smart Secure Plus Plan</x:String>
+                  <x:String>Max Life Normal Plan</x:String>
+                  <x:String>Max Life Secure Plan</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Product Name" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="product_name_picker"
+                    Title="Product Name"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Max Life Smart Secure Plus Plan</x:String>
+                  <x:String>Max Life Normal Plan</x:String>
+                  <x:String>Max Life Secure Plan</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Product Type" FontSize="22" TextColor="Black"/>
+            <StackLayout>
+                <RadioButton Content="Traditional" IsChecked="true"/>
+                <RadioButton Content="ULIP" />
+                <RadioButton Content="Sales Stories"/>
+                <RadioButton Content="Annuity"/>
+            </StackLayout>
+
+            <Label Text="Premium Type" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+            <Picker x:Name="premium_type_picker"
+                    Title="Premium Type"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Regular Pay</x:String>
+                  <x:String>Advance Pay</x:String>
+                  <x:String>Hybrid Pay</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Premium Payment Term" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="premium_payment_term_picker"
+                    Title="Premium Payment Term"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>5</x:String>
+                  <x:String>10</x:String>
+                  <x:String>20</x:String>
+                  <x:String>Life Time</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Policy Term" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="policy_term_picker"
+                    Title="Policy Term"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>5</x:String>
+                  <x:String>10</x:String>
+                  <x:String>20</x:String>
+                  <x:String>Life Time</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Death Benifit Option" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="death_benefit_option_picker"
+                    Title="Death Benefit Option"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Life Cover</x:String>
+                  <x:String>Term Cover</x:String>
+                  <x:String>Other</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Sum Assured" FontSize="22" TextColor="Black"/>
+            <Entry Text="5000000.00" Margin="0,-5,0,10"/>
+
+            <Label Text="Smoking Habit" FontSize="22"/>
+            <StackLayout Orientation="Horizontal">
+                <RadioButton Content="Yes" />
+                <RadioButton Content="No" IsChecked="true"/>
+            </StackLayout>
+
+            <Label Text="Mode of Payment" FontSize="22" Margin="0,10,0,0" TextColor="Black"/>
+            <Picker x:Name="mode_of_payment_picker"
+                    Title="Mode of Payment"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Life Cover</x:String>
+                  <x:String>Term Cover</x:String>
+                  <x:String>Other</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Effective Date of Coverage" FontSize="22" TextColor="Black"/>
+            <DatePicker MinimumDate="01/01/2018"
+            MaximumDate="12/31/2018"
+            Date="06/21/2018"
+            Margin="0,-5,0,10"/>
+
+
+
+            <!--<Label Text="Bank Details" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"/>-->
+
+            <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0">
+                <Label Text="Bank Details" HorizontalTextAlignment="Center" TextColor="Black" FontSize="30"/>
+            </Frame>
+
+
+            <Label Text="All payouts will be credited to this account through electronic payment" TextColor="Black"/>
+
+            <Label Text="Bank Account Number" FontSize="22" TextColor="Black"/>
+            <Entry Text="123456789" Margin="0,-5,0,10"/>
+
+            <Label Text="Name of Account Holder" FontSize="22" TextColor="Black"/>
+            <Entry Text="kartik patil" Margin="0,-5,0,10"/>
+
+            <Label Text="Bank Account IFSC Code" FontSize="22" TextColor="Black"/>
+            <Entry Text="123456789" Margin="0,-5,0,10"/>
+
+            <Label Text="Bank Account MICR Number" FontSize="22" TextColor="Black"/>
+            <Entry Text="123456789" Margin="0,-5,0,10"/>
+
+            <Label Text="Bank Name" FontSize="22" TextColor="Black"/>
+            <Entry Text="Axis" Margin="0,-5,0,10"/>
+
+            <Label Text="Bank Branch" FontSize="22" TextColor="Black"/>
+            <Entry Text="HADAPSAR PUNE" Margin="0,-5,0,10"/>
+
+            <Label Text="Type of Account" FontSize="22" TextColor="Black"/>
+            <Picker x:Name="type_of_account_picker"
+                    Title="Type of Account"
+                    Margin="0,-5,0,10">
+              <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                  <x:String>Current Account</x:String>
+                  <x:String>Savings Account</x:String>
+                </x:Array>
+              </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Bank Account Opening Date" FontSize="22" TextColor="Black"/>
+            <DatePicker MinimumDate="01/01/2018"
+            MaximumDate="12/31/2018"
+            Date="06/21/2018"
+            Margin="0,-5,0,10"/>
+
+
+
+            <!--<Label Text="Payment Details" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"/>-->
+
+            <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0">
+                <Label Text="Payment Details" HorizontalTextAlignment="Center" TextColor="Black" FontSize="30"/>
+            </Frame>
+
+
+            <Label Text="Premium Amount" FontSize="22" TextColor="Black"/>
+            <Entry Text="5000" Margin="0,-5,0,10"/>
+
+            <StackLayout Orientation="Horizontal">
+            <CheckBox />
+            <Label Text="Don't have PAN?" FontSize="22" TextColor="Black"/>
+            </StackLayout>
+            
+
+            
+
+            <Label Text="Email Address" FontSize="22" TextColor="Black"/>
+            <Entry Keyboard="Email" Margin="0,-5,0,10"/>
+
+            <Button Text="Proceed"
+                    BackgroundColor="Orange"
+                    Clicked="NavigateButton_OnClicked"
+                    FontSize="22"
+                    TextColor="Black"/>
+
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

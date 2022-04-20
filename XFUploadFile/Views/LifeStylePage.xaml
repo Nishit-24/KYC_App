@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFUploadFile.Views.LifeStylePage"
+    Padding="10">
+
+    
+        <StackLayout VerticalOptions="FillAndExpand">
+
+            <!--<Label Text="Payor Details" FontSize="30" HorizontalTextAlignment="Center"/>-->
+
+            <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0">
+                <Label Text="Payor Details" HorizontalTextAlignment="Center" TextColor="Black" FontSize="30"/>
+            </Frame>
+
+            <Label Text="Is the payer different from the proposer" FontSize="20" Margin="0,10,0,0" TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                <RadioButton Content="Yes" />
+                <RadioButton Content="No" IsChecked="true"/>
+            </StackLayout>
+
+            <!--<Label Text="EIA" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"/>-->
+
+            <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0">
+                <Label Text="EIA" HorizontalTextAlignment="Center" TextColor="Black" FontSize="30"/>
+            </Frame>
+
+            <Label Text="Does the proposer wish to hold this policy electronically under e-Insurance?" FontSize="20" Margin="0,10,0,0" TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,20">
+                <RadioButton Content="Yes" />
+                <RadioButton Content="No" IsChecked="true"/>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <!-- middle controls -->
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+            <Button Text="Proceed"
+                    BackgroundColor="Orange"
+                    Clicked="NavigateButton_OnClicked"
+                    FontSize="22"
+                    Margin="0,0,0,5"
+                    TextColor="Black"
+                    />
+            </StackLayout>
+
+        </StackLayout>
+    
+
+
+</ContentPage>

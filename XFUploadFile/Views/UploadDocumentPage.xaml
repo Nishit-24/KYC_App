@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFUploadFile.Views.UploadDocumentPage"
+    Padding="10">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+
+        <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0" Margin="0, 5, 0, 30">
+                <Label Text="Identity Proof"
+                       HorizontalTextAlignment="Center"
+                       TextColor="Black"
+                       FontSize="30"/>
+        </Frame>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+
+        <Button Text="Upload Document"
+                FontSize="22"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Button_Clicked"
+                Margin="10,10"/>
+
+
+        <!--<Button x:Name="btnSelectPic" Text="Select Document"
+                Clicked="Button_Clicked" BackgroundColor="DodgerBlue" TextColor="Black" Margin="0, 0, 0, 20"/>
+
+        
+        <Image x:Name="imageView" HeightRequest="300" WidthRequest="400"/>
+        <ActivityIndicator x:Name="uploadIndicator" IsVisible="False" IsRunning="False" Color="DodgerBlue"/>
+        <Button Text="Upload to Blob" Clicked="Button_Clicked_1" x:Name="btnUpload" BackgroundColor="LimeGreen" TextColor="Black"/>
+        <Editor x:Name="UploadedUrl" TextColor="Black" HeightRequest="85" Text=""/>-->
+        </StackLayout>
+
+
+        <StackLayout VerticalOptions="End">
+            
+        <Button Text="Proceed"
+                BackgroundColor="Orange"
+                
+                FontSize="22"
+                IsEnabled="{Binding LoginAllowed}"
+                Clicked="NavigateButton_OnClicked"
+                Margin="0,0,0,5"/>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

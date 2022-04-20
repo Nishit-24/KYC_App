@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFUploadFile.Views.OTPVerificationPage"
+    Padding="10">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <!--<Frame BackgroundColor="#2196F3" Padding="20, 0, 20, 20" CornerRadius="0">
+            <Label Text="Video KYC Demo" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>-->
+
+        <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0" Margin="0, 5, 0, 30">
+                <Label Text="OTP Verification"
+                       HorizontalTextAlignment="Center"
+                       TextColor="Black"
+                       FontSize="30"/>
+        </Frame>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+            
+                
+        <Button Text="Upload OTP Image"
+                FontSize="22"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Button_Clicked"
+                Margin="10,10"/>
+
+        <Button Text="Capture OTP Image"
+                FontSize="22"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Button_Clicked_1"
+                Margin="10,10"/>
+
+        <Button Text="Speak OTP"
+                FontSize="22"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Button_Clicked_2"
+                Margin="10,10"/>       
+        
+        <!--<Label x:Name="StatusLabel" Text="Upload status" FontSize="Title" Padding="30,30,30,30"/>-->
+
+        </StackLayout>
+
+        <StackLayout VerticalOptions="End">
+        <Button Text="Proceed"
+                BackgroundColor="Orange"
+                FontSize="22"
+                TextColor="Black"
+                Clicked="NavigateButton_OnClicked"
+                IsEnabled="{Binding LoginAllowed}"/>
+         </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>

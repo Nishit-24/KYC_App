@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XFUploadFile.Views.VideoVerificationPage"
+    Padding="10">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <!--<Frame BackgroundColor="#2196F3" Padding="20, 0, 20, 20" CornerRadius="0">
+            <Label Text="Video KYC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>-->
+
+        <Frame BackgroundColor="Orange" Padding="5, 5, 5, 5" CornerRadius="0" Margin="0, 5">
+                <Label Text="Video KYC" HorizontalTextAlignment="Center" TextColor="Black" FontSize="30"/>
+        </Frame>
+
+        <StackLayout VerticalOptions="CenterAndExpand">
+        
+        <Button Text="Capture Image and Video"
+                FontSize="22"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Button_Clicked"
+                Margin="10, 0"/>
+        <!--<Label x:Name="StatusLabel"
+               Text="Upload status"
+               FontSize="Title"
+               Padding="30,30,30,30"
+               TextColor="Black"/>-->
+
+        </StackLayout>
+
+        <StackLayout VerticalOptions="End">
+            
+        <Button Text="Proceed"
+                BackgroundColor="Orange"
+                
+                FontSize="22"
+                IsEnabled="{Binding LoginAllowed}"
+                Clicked="NavigateButton_OnClicked"
+                Margin="0,0,0,5"/>
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
