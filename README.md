@@ -1,4 +1,6 @@
-# XFUploadFile
-Sample code to show how to upload a file from Xamarin.Forms
+This is a video kyc app.
 
-Find the video walkthrough of this on my YouTube channel: https://www.youtube.com/watch?v=KPDGtLeNClQ&list=PLfbOp004UaYUgjhTHjtSixo-iMdz6PhIv&index=1
+Some files are pending to be uploaded due to large size.
+
+Below is one file which is not uploaded.
+remote: warning: File XFUploadFile.Server/libOpenCvSharpExtern.dylib is 57.51 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
